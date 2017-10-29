@@ -1,0 +1,1 @@
+require.config({paths:{jquery:"../../base/jquery-1.7.2.min"}}),require(["jquery"],function(e){!function(){var r=e(".div1");console.log(r)}()});
