@@ -1,0 +1,202 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  outline: none;
+  list-style: none;
+}
+ul,
+li {
+  padding: 0px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head-top {
+  height: 42px;
+  background: #292524;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-indent: -25px;
+  position: fixed;
+  width: 100%;
+}
+.head-top i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.dealer-detalis {
+  padding: 62px 10px 15px 10px;
+}
+.dealer-detalis li {
+  padding: 5px 0px;
+}
+.dealer-detalis li i {
+  font-style: normal;
+}
+.dealer-detalis li img {
+  max-width: 15px;
+}
+.dealer-detalis li .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.dealer-detalis li .collection {
+  float: right;
+  text-decoration: none;
+  color: #c70202;
+  background: url(../../images/heart.png) no-repeat 0px 3px;
+  background-size: 10px;
+  padding: 0px 12px;
+}
+.dealer-detalis li .conment {
+  padding: 0px 15px;
+  display: inline-block;
+}
+.store-pic-content {
+  padding: 15px 10px 15px 10px;
+}
+.store-pic-content .pic-area {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.store-pic-content .pic-area img {
+  width: 46%;
+  height: 120px;
+}
+.store-pic-content .pic-area .first {
+  padding-right: 10px;
+}
+.store-pic-content .pic-button {
+  text-align: center;
+  padding: 10px 0px;
+}
+.store-pic-content .pic-button span {
+  padding: 7px 25px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #f4f2f2 10%, #cbc9c9 90%);
+  background: linear-gradient(top, #f4f2f2 10%, #cbc9c9 90%);
+}
+.store-pic-content .pic-button .upp {
+  margin-right: 10px;
+}
+.store-introduce {
+  padding: 20px 10px;
+}
+.store-introduce .head {
+  font-size: 14px;
+  font-weight: bold;
+}
+.store-introduce .contents {
+  padding: 10px 0px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.store-evaluate {
+  padding: 0px 10px 15px 10px;
+  position: relative;
+}
+.store-evaluate .evalue-head {
+  font-size: 14px;
+  font-weight: bold;
+}
+.store-evaluate .evalue-speak {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 25px;
+  background: #c70202;
+  color: #fff;
+}
+.evalue-list {
+  padding: 10px 0px;
+}
+.evalue-list .logo-con {
+  float: left;
+  padding-top: 15px;
+}
+.evalue-list .logo-con .dealer-logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e6e1e1;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 3px 3px;
+}
+.evalue-list .logo-con .dealer-logo img {
+  max-width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.evalue-list .dealer-info {
+  padding: 0px 0px 0px 5px;
+  float: right;
+  width: 75%;
+}
+.evalue-list .dealer-info ul li {
+  padding: 2px 0px;
+}
+.evalue-list .dealer-info ul li i {
+  font-style: normal;
+}
+.evalue-list .dealer-info ul li img {
+  max-width: 15px;
+}
+.evalue-list .dealer-info ul li .name {
+  font-weight: bold;
+  font-size: 14px;
+}
+.evalue-list .dealer-info ul li .word {
+  max-height: 30px;
+  display: inline-block;
+  overflow-y: scroll;
+}
+.evalue-list .dealer-info ul li .time {
+  padding: 0px 5px 0px 0px;
+}
+.evalue-list .dealer-info ul li .store-name {
+  padding: 0px 0px 0px 5px;
+}
+.in-conment {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+.in-conment textarea {
+  width: 95%;
+  height: 50px;
+  border: 1px solid #e6e1e1;
+  padding: 5px 5px;
+  resize: none;
+}
+.in-conment .submit {
+  float: right;
+  padding: 7px 25px;
+  background: #f7cc04;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}

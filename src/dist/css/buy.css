@@ -1,0 +1,70 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0 0;
+  margin: 0 0;
+  outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head {
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.buy-content,
+.buy-num,
+.user-info {
+  padding: 0px 10px 20px 10px;
+}
+.commodity-info {
+  padding: 3px 0px;
+}
+.commodity-info dt,
+.commodity-info dd {
+  float: left;
+}
+.commodity-info dt {
+  font-weight: bold;
+}
+.commodity-info .number .num {
+  width: 150px;
+  height: 25px;
+  border: 1px solid #aaa9a9;
+  padding: 0 5px;
+  line-height: 25px;
+  border-radius: 3px;
+}
+.commodity-info .number span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.confirm {
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.confirm a {
+  padding: 5px 30px;
+  background: #c70202;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.con-pay {
+  margin-top: 20px;
+}

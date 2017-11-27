@@ -1,0 +1,135 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  outline: none;
+  list-style: none;
+}
+ul,
+li {
+  padding: 0px;
+}
+a:focus {
+  outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head-top {
+  height: 42px;
+  background: #292524;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-indent: -25px;
+  position: fixed;
+  width: 100%;
+}
+.head-top i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.washCar-option {
+  padding: 67px 10px 15px 10px;
+}
+.washCar-option .sel-same {
+  float: left;
+  width: 33.33%;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+}
+.washCar-option .opt-selected {
+  border-bottom: 1px solid #e6e1e1;
+  color: #c70202;
+  background: #fff;
+}
+.washCar-option .no-select {
+  background: #eee;
+  border-top: 1px solid #e6e1e1;
+  color: #000;
+}
+.usable-content,
+.used-content,
+.expired-content {
+  padding: 5px 10px 20px 10px;
+}
+.usable-content .usable,
+.used-content .usable,
+.expired-content .usable {
+  background: #fff;
+}
+.usable-content .used,
+.used-content .used,
+.expired-content .used {
+  background: #eee;
+}
+.dealers-list {
+  padding: 3px 3px;
+  background: #f1fcfe;
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+.dealers-list .dealer-info {
+  padding: 0px 5px;
+}
+.dealers-list .dealer-info ul li {
+  padding: 3px 0px;
+}
+.dealers-list .dealer-info ul li i {
+  font-style: normal;
+}
+.dealers-list .dealer-info ul li .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.dealers-list .dealer-info ul li .time {
+  float: right;
+  font-size: 14px;
+}
+.dealers-list .dealer-info ul li .time .usable-time {
+  color: #c70202;
+  font-style: normal;
+}
+.dealers-list .dealer-info ul li .time .used-time {
+  color: #ffa302;
+  font-style: normal;
+}
+.dealers-list .dealer-info ul li .distance em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+.dealers-list .dealer-info ul li .rest {
+  float: right;
+  color: #ffa302;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+.dealers-list .dealer-info ul li .expired {
+  float: right;
+  padding: 5px 10px;
+  background: #c70202;
+  margin-right: -8px;
+  margin-bottom: -3px;
+  color: #fff;
+}

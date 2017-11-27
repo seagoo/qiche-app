@@ -1,0 +1,127 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0 0;
+  margin: 0 0;
+  outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.register-head {
+  height: 42px;
+  background: #292524;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-indent: -25px;
+}
+.register-head i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.register-word {
+  padding: 25px 15px 10px 15px;
+}
+.register-word span {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.register-word a {
+  text-decoration: none;
+}
+.register-info .register-option {
+  padding: 15px 15px;
+}
+.register-info .register-option .sel-same {
+  float: left;
+  width: 49%;
+  height: 40px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  color: #000;
+}
+.register-info .register-option .opt-selected {
+  background: red;
+  border-bottom: none;
+  border-right: none;
+}
+.register-info .register-option .no-select {
+  background: #eee;
+  border-bottom: none;
+}
+.register-info .phone-num {
+  padding: 15px 15px;
+  position: relative;
+  text-align: center;
+}
+.register-info .phone-num .register-mobie {
+  width: 95%;
+  padding: 12px 5px;
+  border-radius: 5px;
+  background: #eee;
+  border: none;
+  caret-color: red;
+}
+.register-info .phone-num .btn-code {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 18px;
+  margin-top: 7px;
+  position: absolute;
+  z-index: 11;
+  right: 9%;
+  background: red;
+  color: #fff;
+  font-size: 8px;
+}
+.register-info .in-center {
+  padding: 0px 15px;
+  text-align: center;
+}
+.register-info .in-center .psw,
+.register-info .in-center .valid-code {
+  padding: 12px 5px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 15px 0px;
+  border: none;
+  background: #eee;
+}
+.register-info .warm-info {
+  color: red;
+  margin: -10px 15px 15px 15px;
+}
+.register-info .sub-center {
+  padding: 0px 15px 15px 15px;
+  text-align: center;
+}
+.register-info .sub-center .btn-submit {
+  padding: 12px 5px;
+  border-radius: 5px;
+  width: 100%;
+  background: red;
+  border: none;
+  color: #fff;
+}

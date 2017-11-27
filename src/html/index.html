@@ -6,32 +6,185 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../dist/css/index.css">
 </head>
-<style type="text/css">
-</style>
 
 <body>
-    <div class="container-register clearfix">
-        <div class="register-head clearfix"><i></i>注册</div>
-        <div class="register-word"><span>注册</span><a href="javascript:void(0);">直接登录</a></div>
-        <form class="register-info" action="#" method="POST">
-            <div class="register-option clearfix">
-                <input type="text" name="" value="我是车主" class="opt-selected sel-same" disabled="true">
-                <input type="text" name="" value="我是洗车店" class="no-select sel-same" disabled="true">
+    <div class="head-top clearfix"><i></i>嘟嘟洗车</div>
+    <p class="head-user"><span><em href="#">上海</em> zxm</span><a href="#">登录</a><a href="#">注册/</a></p>
+    <div class="banner-continer">
+        <div class="banner-content">
+            <div class="ner-pic">
+                <img src="../images/dealer-logo2.jpg">
+                <img src="../images/dealer-logo1.png">
+                <img src="../images/dealer-logo2.jpg">
             </div>
-            <div class="phone-num">
-                <input type="text" name="phone" class="register-mobie" value="" placeholder="请输入手机号码">
-                <input type="button" name="" value="发送验证码" class="btn-code">
-            </div>
-            <div class="in-center">
-                <input type="text" name="" value="" class="valid-code" placeholder="请输入验证码">
-            </div>
-            <div class="in-center">
-            <input type="password" name="psw" value="" class="psw" placeholder="请输入密码">
-          </div>
-            <div class="warm-info">字母和数字组合，至少8位</div>
-            <div class="sub-center"><input type="button" value="提交注册" class="btn-submit"></div>
-        </form>
+        </div>
+        <div class="ner-icon">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
+    <!-- 提示快速点击板块开始 -->
+    <div class="my-marked">
+        <div class="marked-free">免费抢</div>
+        <div class="me-ticket"><i>我的</i><i>洗车券</i><span>2</span></div>
+        <div class="me-collection"><i>我的</i><i>收藏</i><span>10</span></div>
+    </div>
+    <!-- 提示快速点击板块结束-->
+    <!-- hot,new 板块开始-->
+    <div class="hn-container">
+        <div class="hot-new clearfix">
+            <div class="hot">
+                <div class="icon hot-icon">热</div>
+                <div class="hot-pic"><img src="../images/pb-cart.png"></div>
+                <div class="hot-info">
+                    <ul>
+                        <li><i class="name">车八度</i>
+                            <i class="distance">5km</i>
+                        </li>
+                        <li><i class="address">浦东新区德平路1065弄25号602室</i></li>
+                        <li>
+                            <i class="price"> <em class="n-price">¥20</em><em class="original-price">¥30</em></i>
+                            <a href="javascript:viod(0)" class="once">马上抢</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="new">
+                <div class="icon new-icon">新</div>
+                <div class="hot-pic"><img src="../images/dealer-logo1.png"></div>
+                <div class="hot-info">
+                    <ul>
+                        <li><i class="name">车八度</i>
+                            <i class="distance">5km</i>
+                        </li>
+                        <li><i class="address">浦东新区德平路1065弄25号602室</i></li>
+                        <li>
+                            <i class="price"> <em class="n-price">¥20</em><em class="original-price">¥30</em></i>
+                            <a href="javascript:viod(0)" class="once">马上抢</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hot,new 板块结束-->
+    <!-- 介绍板块开始-->
+    <div class="recommend">
+         <p>为你推荐</p>
+    <div class="dealers-list clearfix">
+                <div class="logo-con">
+                    <div class="dealer-logo "><img src="../images/dealer-logo1.png"></div>
+                </div>
+                <div class="dealer-info">
+                    <ul>
+                        <li><i class="name ">车八度</i></li>
+                        <li>
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/halfYellow.png">
+                            <img src="../images/star-gray.png">
+                            <i>8.0</i>
+                            <i class="m-sales">月销售30单</i>
+
+                        </li>
+                        <li><i class="address">地址:上海市浦东新区德平路1065弄25号602室</i></li>
+                        <li><i class="distance">距离你当前位置<em>5</em>km</i></li>
+                        <li>
+                            <i class="buy">
+                                <em class="price">¥20</em><em class="original-price">¥30</em>
+                                 <a href="javascript:viod(0)" class="once">马上抢</a>
+                               
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dealers-list clearfix">
+                <div class="logo-con">
+                    <div class="dealer-logo "><img src="../images/dealer-logo1.png"></div>
+                </div>
+                <div class="dealer-info">
+                    <ul>
+                        <li><i class="name ">车八度</i></li>
+                        <li>
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/star-yellow.png">
+                            <img src="../images/halfYellow.png">
+                            <img src="../images/star-gray.png">
+                            <i>8.0</i>
+                            <i class="m-sales">月销售30单</i>
+                        </li>
+                        <li><i class="address">地址:上海市浦东新区德平路1065弄25号602室</i></li>
+                        <li><i class="distance">距离你当前位置<em>5</em>km</i></li>
+                        <li>
+                            <i class="buy">
+                                <em class="price">¥20</em><em class="original-price">¥30</em>
+                                 <a href="javascript:viod(0)" class="once">马上抢</a>
+                               
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- 介绍板块结束-->
+    <!-- 交易流程开始-->
+    <div class="deal-process">
+        <p>交易流程</p>
+        <div class="pro-con">
+            <ul>
+                <li>通过嘟嘟购买洗车券获得洗车券专用号<i></i></li>
+                <li>前往洗车店洗车后，洗车店将会核对洗车券专用号，然后注销此次购买的洗车券<i></i></li>
+                <li>通过嘟嘟购买洗车券获得洗车券专用号<i></i></li>
+                <li>前往洗车店洗车后，洗车店将会核对洗车券专用号，然后注销此次购买的洗车券<i></i></li>     
+            </ul>
+        </div>
+    </div>
+    <!-- 交易流程结束-->
+    <!-- 常见问题开始-->
+    <div class="common-problem">
+        <p>常见问题</p>
+        <div class="pro-content">
+            <ul>
+                <li>
+                    <span>怎么购买洗车券?</span>
+                   
+                </li>
+                 <div class="content-box first">首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买
+                 </div>
+                <li>
+                    <span>买了之后怎么样</span>
+                    
+                </li>
+                <div class="content-box">
+                    首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买
+                </div>
+                <li>
+                    <span>不小心删除洗车券号怎么办</span>
+                    
+                </li>
+                <div class="content-box">
+                    首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买首先注册账号，点击购买
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 常见问题结束-->
+    <!-- 底部开始-->
+    <div class="home-bottom">
+        <ul>
+            <li><a class="active" href="javascript:viod(0)"><img src="../images/home.png">首页</a></li>
+            <li><a href="javascript:viod(0)"><img src="../images/find-icon.png">发现</a></li>
+            <li><a href="javascript:viod(0)"><img src="../images/user.png">我的</a></li>
+
+        </ul>
+    </div>
+    <!-- 底部结束-->
+
     <script type="text/javascript" src="../base/require.js" data-main="../dist/js/index.js"></script>
 </body>
 

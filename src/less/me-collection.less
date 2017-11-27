@@ -1,0 +1,156 @@
+html,
+body {
+    font-family: Microsoft YaHei, PingFang SC;
+
+    font-size: 12px;
+}
+
+* {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    outline: none;
+    list-style: none;
+}
+
+ul,
+li {
+    padding: 0px;
+}
+a:focus{
+    outline: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    heigth: 0
+}
+
+
+a:hover {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+.head-top {
+    height: 42px;
+    background: #292524;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-indent: -25px;
+    position: fixed;
+    width: 100%;
+
+    i {
+
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transform: rotate(45deg);
+        text-indent: 10px;
+        float: left;
+        margin: 15px 0 0 15px;
+    }
+}
+
+.collection-info{
+    padding:62px 0px 15px 0px; 
+}
+.dealers-list {
+    padding: 10px 10px 15px 10px;
+    .logo-con {
+        float: left;
+        padding-top: 10px;
+        .dealer-logo {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #e6e1e1;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            padding: 3px 3px;
+            img {
+                max-width: 50px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .dealer-info {
+        padding: 0px 5px;
+        float: right;
+        width: 75%;
+
+        ul li {
+            padding: 3px 0px;
+            i {
+                font-style: normal;
+            }
+            img {
+                max-width: 15px;
+            }
+            .m-sales {
+                float: right;
+                padding: 2px 0px;
+            }
+            .name {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .time {
+                float: right;
+                color: #c70202;
+                font-size: 14px;
+            }
+            .conment {
+                float: right;
+            }
+
+            .distance {
+
+                em {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+            .buy {
+                float: right;
+                .once {
+
+                    padding: 5px 10px;
+                    background: #f7cc04;
+                    border: none;
+                    font-weight: bold;
+                    color: #000;
+                    text-decoration: none;
+                   
+                }
+                .price {
+                    color: #c70202;
+                    font-style: normal;
+                    padding-right: 5px;
+                    margin-top: 5px;
+                    font-size: 14px;
+                }
+                .original-price {
+                    font-size: 10px;
+                    position: relative;
+                    text-decoration: line-through;
+                    
+                }
+            }
+        }
+    }
+}
+
+//免费洗车结束
+.all-coupons-content {}

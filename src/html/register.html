@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../dist/css/register.css">
+</head>
+
+
+<body>
+	<div class="register-head clearfix"><i></i>注册</div>
+    <div class="container-register clearfix">
+        <!-- <div class="register-head clearfix"><i></i>注册</div> -->
+        <div class="register-word"><span>注册</span><a href="javascript:void(0);">直接登录</a></div>
+        <form class="register-info" action="#" method="POST">
+            <!-- <div class="register-option clearfix">
+                <input type="text" name="" value="我是车主" class="opt-selected sel-same" disabled="true">
+                <input type="text" name="" value="我是洗车店" class="no-select sel-same" disabled="true">
+            </div> -->
+            <div class="phone-num">
+                <input type="text" name="phone" class="register-mobie" value="" placeholder="请输入手机号码" autofocus="autofocus">
+                <input type="button" name="" value="获取验证码" class="btn-code">
+            </div>
+            <div class="in-center">
+                <input type="text" name="" value="" class="valid-code" placeholder="请输入验证码">
+            </div>
+            <div class="in-center">
+            <input type="password" name="psw" value="" class="psw" placeholder="请输入密码">
+          </div>
+            <div class="warm-info">字母和数字组合，至少8位</div>
+            <div class="sub-center"><input type="button" value="提交注册" class="btn-submit"></div>
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="../base/require.js" data-main="../dist/js/register.js"></script>
+</body>
+
+</html>

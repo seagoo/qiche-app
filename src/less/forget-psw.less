@@ -1,0 +1,104 @@
+html,
+body {
+    font-family: Microsoft YaHei, PingFang SC;
+
+    font-size: 12px;
+}
+
+* {
+    padding: 0 0;
+    margin: 0 0;
+    outline: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    heigth: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+.forget-psw-head {
+    height: 42px;
+    background: #292524;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-indent: -25px;
+
+    i {
+
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transform: rotate(45deg);
+        text-indent: 10px;
+        float: left;
+        margin: 15px 0 0 15px;
+    }
+}
+
+.forget-psw-word {
+    padding: 25px 15px 0px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.forget-center {
+    padding: 15px 15px 5px 15px;
+    text-align: center;
+    .login-mobie,
+    .new-psw,
+    .again-psw {
+        width: 95%;
+        padding: 12px 5px;
+        border-radius: 5px;
+        border: none;
+        margin: 15px 0px;
+        background: #eee;
+        caret-color: red;
+    }
+    .login-submit {
+        width: 95%;
+        padding: 12px 5px;
+        border-radius: 5px;
+        border: none;
+        margin: 15px 0px 10px 0px;
+        background: #c70202;
+        color: #fff;
+    }
+    .get-code {
+        position: relative;
+        margin: 15px 0px;
+        text-align: center;
+        .code {
+            padding: 12px 5px;
+            border-radius: 5px;
+            border: none;
+            background: #eee;
+            width: 95%;
+        }
+        .btn-code {
+            padding: 5px 5px;
+            border: none;
+            border-radius: 18px;
+            margin-top: 7px;
+            position: absolute;
+            z-index: 11;
+            right: 9%;
+            background: #c70202;
+            color: #fff;
+            font-size: 8px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0 0;
+  margin: 0 0;
+  outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head-top {
+  height: 42px;
+  color: #fff;
+  line-height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.head-top a {
+  color: #6e6e6e;
+}
+.head-top a i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #6e6e6e;
+  border-bottom: 1px solid #6e6e6e;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.buy-content {
+  padding: 0px 10px 30px 10px;
+}
+.num-time {
+  margin-bottom: 20px;
+}
+.commodity-info {
+  padding: 3px 0px;
+}
+.commodity-info dt,
+.commodity-info dd {
+  float: left;
+}
+.commodity-info dt span,
+.commodity-info dd span {
+  margin-left: 150px;
+}
+.commodity-info dt .fail,
+.commodity-info dd .fail {
+  color: #c70202;
+}
+.commodity-info dt .succ,
+.commodity-info dd .succ {
+  color: #5ebf65;
+}
+.commodity-info dt {
+  font-weight: bold;
+}

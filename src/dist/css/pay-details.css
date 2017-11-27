@@ -1,0 +1,88 @@
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+}
+* {
+  padding: 0 0;
+  margin: 0 0;
+  outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head-top {
+  height: 42px;
+  color: #fff;
+  line-height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.head-top a {
+  color: #6e6e6e;
+}
+.head-top a i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #6e6e6e;
+  border-bottom: 1px solid #6e6e6e;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.buy-content {
+  padding: 10px 10px;
+}
+.num-time {
+  margin-bottom: 20px;
+}
+.commodity-info {
+  padding: 3px 0px;
+}
+.commodity-info dt,
+.commodity-info dd {
+  float: left;
+}
+.commodity-info dt {
+  font-weight: bold;
+}
+.payment-con,
+.fail-state,
+.succ-state {
+  padding: 10px 10px;
+}
+.payment-con dl dt,
+.fail-state dl dt,
+.succ-state dl dt,
+.payment-con dl dd,
+.fail-state dl dd,
+.succ-state dl dd {
+  float: left;
+}
+.payment-con dl dt,
+.fail-state dl dt,
+.succ-state dl dt {
+  font-weight: bold;
+}
+.succ-state {
+  color: #5ebf65;
+}
+.fail-state {
+  color: #c70202;
+}
+.again-pay {
+  padding: 30px 10px;
+  text-align: center;
+}
+.again-pay a {
+  color: #3ecdea;
+  margin-right: 5px;
+}

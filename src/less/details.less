@@ -1,0 +1,230 @@
+html,
+body {
+    font-family: Microsoft YaHei, PingFang SC;
+
+    font-size: 12px;
+}
+
+* {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    outline: none;
+    list-style: none;
+}
+
+ul,
+li {
+    padding: 0px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    heigth: 0
+}
+
+
+a:hover {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+.head-top {
+    height: 42px;
+    background: #292524;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-indent: -25px;
+    position: fixed;
+    width: 100%;
+
+    i {
+
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transform: rotate(45deg);
+        text-indent: 10px;
+        float: left;
+        margin: 15px 0 0 15px;
+    }
+}
+
+.dealer-detalis {
+    padding: 62px 10px 15px 10px;
+    li {
+
+        padding: 5px 0px;
+        i {
+            font-style: normal;
+        }
+        img {
+            max-width: 15px;
+        }
+        .name {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .collection {
+            float: right;
+            text-decoration: none;
+            color: #c70202;
+            background: url(../../images/heart.png) no-repeat 0px 3px;
+            background-size: 10px;
+            padding: 0px 12px; // img{
+            //     max-width: 10px;
+            // }
+        }
+        .conment {
+            padding: 0px 15px;
+
+            display: inline-block;
+        }
+    }
+}
+
+.store-pic-content {
+    padding: 15px 10px 15px 10px;
+
+
+    .pic-area {
+        text-align: center;
+        padding-bottom: 10px;
+        img {
+            width: 46%;
+            height: 120px;
+        }
+        .first {
+            padding-right: 10px;
+        }
+    }
+    .pic-button {
+        text-align: center;
+        padding: 10px 0px;
+        span {
+            padding: 7px 25px;
+            border-radius: 5px;
+            background: -webkit-linear-gradient(top, #f4f2f2 10%, #cbc9c9 90%);
+            background: linear-gradient(top, #f4f2f2 10%, #cbc9c9 90%);
+        }
+        .upp {
+            margin-right: 10px;
+        }
+    }
+}
+
+.store-introduce {
+    padding: 20px 10px;
+    .head {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .contents {
+        padding: 10px 0px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+}
+
+.store-evaluate {
+    padding: 0px 10px 15px 10px;
+    position: relative;
+
+    .evalue-head {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .evalue-speak {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 7px 25px; //background: -webkit-linear-gradient(top, #f4f2f2 10%, #c70202 90%);
+        //background: linear-gradient(top, #f4f2f2 10%, #c70202 90%);
+        background: #c70202;
+        color: #fff;
+    }
+}
+
+.evalue-list {
+    padding: 10px 0px;
+    .logo-con {
+        float: left;
+        padding-top: 15px;
+        .dealer-logo {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #e6e1e1;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            padding: 3px 3px;
+            img {
+                max-width: 50px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .dealer-info {
+        padding: 0px 0px 0px 5px;
+        float: right;
+        width: 75%;
+        ul li {
+            padding: 2px 0px;
+            i {
+                font-style: normal;
+            }
+            img {
+                max-width: 15px;
+            }
+            .name {
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .word {
+                max-height: 30px;
+                display: inline-block;
+                overflow-y: scroll;
+            }
+            .time {
+                padding: 0px 5px 0px 0px
+            }
+            .store-name {
+                padding: 0px 0px 0px 5px;
+            }
+        }
+    }
+}
+
+.in-conment {
+
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+
+    textarea {
+        width: 95%;
+        height: 50px;
+        border: 1px solid #e6e1e1;
+        padding: 5px 5px;
+        resize: none;
+    }
+    .submit {
+        float: right;
+        padding: 7px 25px;
+        background: #f7cc04;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+}
