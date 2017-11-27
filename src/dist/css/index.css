@@ -8,13 +8,22 @@ body {
   margin: 0 0;
   outline: none;
 }
+ul li {
+  list-style: none;
+}
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
   heigth: 0;
 }
-.register-head {
+a {
+  text-decoration: none;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.head-top {
   height: 42px;
   background: #292524;
   color: #fff;
@@ -23,8 +32,11 @@ body {
   font-weight: bold;
   font-size: 14px;
   text-indent: -25px;
+  width: 100%;
+  position: fixed;
+  z-index: 111;
 }
-.register-head i {
+.head-top i {
   width: 10px;
   height: 10px;
   display: block;
@@ -35,80 +47,429 @@ body {
   float: left;
   margin: 15px 0 0 15px;
 }
-.register-word {
-  padding: 25px 15px 10px 15px;
+html,
+body {
+  font-family: Microsoft YaHei, PingFang SC;
+  font-size: 12px;
+  background: #fff;
 }
-.register-word span {
-  font-weight: bold;
-  font-size: 18px;
-  padding-right: 10px;
+* {
+  padding: 0 0;
+  margin: 0 0;
+  outline: none;
 }
-.register-word a {
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  heigth: 0;
+}
+a {
   text-decoration: none;
 }
-.register-info .register-option {
-  padding: 15px 15px;
-}
-.register-info .register-option .sel-same {
-  float: left;
-  width: 49%;
-  height: 40px;
+.head-top {
+  height: 42px;
+  background: #292524;
+  color: #fff;
+  line-height: 42px;
   text-align: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-indent: -25px;
+  width: 100%;
+  position: fixed;
+}
+.head-top i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  text-indent: 10px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+.head-user {
+  padding: 47px 10px 5px 10px;
+  background: #fff;
+}
+.head-user a {
+  float: right;
+  font-style: normal;
+  color: #6e6e6e;
+}
+.head-user span {
+  font-size: 14px;
+  color: #c70202;
+}
+.head-user span em {
+  font-style: normal;
+  color: #6e6e6e;
+}
+.banner-continer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner-continer .banner-content {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+}
+.banner-continer .banner-content .ner-pic {
+  height: 140px;
+  width: 300%;
+}
+.banner-continer .banner-content .ner-pic img {
+  width: 33.333%;
+  height: 100%;
+  float: left;
+}
+.banner-continer .ner-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.banner-continer .ner-icon span {
+  width: 5px;
+  height: 5px;
+  float: left;
+  background: #fff;
+  border-radius: 100%;
+  margin: 0px 3px;
+}
+.banner-continer .ner-icon .active {
+  background: #c70202;
+}
+.my-marked {
+  padding: 15px 0px;
+  color: #fff;
+  font-size: 14px;
+}
+.my-marked .me-ticket {
+  background: #3ecdea;
+}
+.my-marked .me-collection {
+  background: #c70202;
+}
+.my-marked .me-ticket,
+.my-marked .me-collection {
+  display: inline-block;
+  width: 20%;
+  padding: 15px 0px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 9%;
+  position: relative;
+}
+.my-marked .me-ticket span,
+.my-marked .me-collection span {
+  position: absolute;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  top: 3px;
+  right: 3px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #c70202;
+  font-size: 8px;
+}
+.my-marked .me-ticket i,
+.my-marked .me-collection i {
+  font-style: normal;
+  display: block;
+}
+.my-marked .marked-free {
+  height: 67px;
+  display: inline-block;
+  width: 20%;
+  background: #f7cc04;
+  border-radius: 10px;
+  vertical-align: bottom;
+  text-align: center;
+  line-height: 67px;
+  margin-left: 9.5%;
+  position: relative;
+}
+.my-marked .marked-free span {
+  position: absolute;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  top: 3px;
+  right: 3px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #c70202;
+  font-size: 8px;
+}
+.hn-container {
+  padding: 10px 10px;
+}
+.hot-new {
+  padding: 5px 0px;
+}
+.hot-new .hot {
+  float: left;
+}
+.hot-new .new {
+  float: right;
+}
+.hot-new .hot,
+.hot-new .new {
+  border: 1px solid #e6e1e1;
+  padding: 5px 5px;
+  width: 42%;
+  position: relative;
+}
+.hot-new .hot .icon,
+.hot-new .new .icon {
+  position: absolute;
+  z-index: 11;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 18px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+.hot-new .hot .new-icon,
+.hot-new .new .new-icon {
+  background: #7bb449;
+}
+.hot-new .hot .hot-icon,
+.hot-new .new .hot-icon {
+  background: #c70202;
+}
+.hot-new .hot .hot-pic,
+.hot-new .new .hot-pic {
+  width: 100%;
+}
+.hot-new .hot .hot-pic img,
+.hot-new .new .hot-pic img {
+  width: 100%;
+  height: 80px;
+}
+.hot-info {
+  padding: 5px 0px;
+}
+.hot-info ul li {
+  padding: 1px 0px;
+  list-style: none;
+}
+.hot-info ul li i {
+  font-style: normal;
+}
+.hot-info ul li .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.hot-info ul li .distance {
+  float: right;
+}
+.hot-info ul li .address {
+  font-size: 10px;
+}
+.hot-info ul li .price .n-price {
+  color: #c70202;
+  font-style: normal;
+  padding-right: 3px;
+  font-size: 14px;
+}
+.hot-info ul li .price .original-price {
+  font-size: 10px;
+  text-decoration: line-through;
+}
+.hot-info ul li .once {
+  padding: 3px 6px;
+  background: #f7cc04;
   border: none;
+  font-weight: bold;
+  float: right;
   color: #000;
 }
-.register-info .register-option .opt-selected {
-  background: red;
-  border-bottom: none;
-  border-right: none;
+.deal-process,
+.recommend,
+.common-problem {
+  padding: 10px 10px;
 }
-.register-info .register-option .no-select {
-  background: #eee;
-  border-bottom: none;
+.deal-process p,
+.recommend p,
+.common-problem p {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6e6e6e;
 }
-.register-info .phone-num {
-  padding: 15px 15px;
+.deal-process .pro-con ul li {
+  padding: 2px 5px 5px 5px;
+  color: #6e6e6e;
+  position: relative;
 }
-.register-info .phone-num .register-mobie {
-  width: 95%;
-  padding: 12px 5px;
-  border-radius: 5px;
-  background: #eee;
+.deal-process .pro-con ul li i {
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3ecdea;
+}
+.pro-content {
+  padding: 5px 0px 100px 0px;
+}
+.pro-content ul li {
+  padding: 8px 5px;
+  border-bottom: 1px solid #e6e1e1;
+  color: #6e6e6e;
+  position: relative;
+}
+.pro-content ul li:first-child {
+  border-top: 1px solid #e6e1e1;
+}
+.pro-content ul li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #bebbbb;
+  border-bottom: 2px solid #bebbbb;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.pro-content .content-box {
+  padding: 10px 5px;
+  border: 1px solid #e6e1e1;
+  margin: 0px 0px 5px 0px;
+  border-top: none;
+  color: #6e6e6e;
+  display: none;
+}
+.pro-content .first {
+  display: block;
+}
+.recommend {
+  border-bottom: 1px solid #e6e1e1;
+}
+.dealers-list {
+  padding: 10px 0px;
+}
+.dealers-list .logo-con {
+  float: left;
+  padding-top: 15px;
+}
+.dealers-list .logo-con .dealer-logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e6e1e1;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 3px 3px;
+}
+.dealers-list .logo-con .dealer-logo img {
+  max-width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dealers-list .dealer-info {
+  padding: 0px 5px;
+  float: right;
+  width: 75%;
+}
+.dealers-list .dealer-info ul li {
+  padding: 3px 0px;
+}
+.dealers-list .dealer-info ul li i {
+  font-style: normal;
+}
+.dealers-list .dealer-info ul li img {
+  max-width: 15px;
+}
+.dealers-list .dealer-info ul li .m-sales {
+  float: right;
+  padding: 2px 0px;
+}
+.dealers-list .dealer-info ul li .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.dealers-list .dealer-info ul li .distance em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+.dealers-list .dealer-info ul li .buy {
+  float: right;
+}
+.dealers-list .dealer-info ul li .buy .once {
+  padding: 5px 10px;
+  background: #f7cc04;
   border: none;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
 }
-.register-info .phone-num .btn-code {
-  padding: 12px 5px;
-  border: none;
-  border-radius: 5px;
-  background: #eee;
+.dealers-list .dealer-info ul li .buy .price {
+  color: #c70202;
+  font-style: normal;
+  padding-right: 5px;
   margin-top: 5px;
+  font-size: 14px;
 }
-.register-info .in-center {
-  padding: 0px 15px;
+.dealers-list .dealer-info ul li .buy .original-price {
+  font-size: 10px;
+  position: relative;
+  text-decoration: line-through;
 }
-.register-info .in-center .psw,
-.register-info .in-center .valid-code {
-  padding: 12px 5px;
-  width: 95%;
-  border-radius: 5px;
-  margin: 15px 0px;
-  border: none;
+.home-bottom {
+  height: 42px;
+  position: fixed;
   background: #eee;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
-.register-info .warm-info {
-  color: red;
-  margin: -10px 15px 15px 15px;
-}
-.register-info .sub-center {
-  padding: 0px 15px 15px 15px;
+.home-bottom ul li {
+  float: left;
+  list-style: none;
+  width: 33%;
+  height: 42px;
+  border-left: 1px solid #e6e1e1;
   text-align: center;
 }
-.register-info .sub-center .btn-submit {
-  padding: 12px 5px;
-  border-radius: 5px;
-  width: 70%;
-  background: red;
-  border: none;
+.home-bottom ul li:first-child {
+  border-left: none;
+}
+.home-bottom ul li a {
+  display: block;
+  line-height: 42px;
+  text-align: center;
+  color: #000;
+  outline: none;
+}
+.home-bottom ul li a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+.home-bottom ul li a img {
+  width: 15px;
+  height: 15px;
+  vertical-align: -2px;
+}
+.home-bottom ul li .active {
+  color: #c70202;
 }
